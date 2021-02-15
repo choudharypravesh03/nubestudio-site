@@ -29,6 +29,22 @@
     <link rel='stylesheet' id='style-css'  href='https://theoutpost.nl/wp-content/themes/outpost/css/style.css?ver=1594235727' type='text/css' media='all' />
 
     <style>
+        @font-face {
+    font-family: "Poppins Regular";
+    src: url("./POPPINS-REGULAR.ttf") format("truetype");
+} 
+
+@font-face {
+    font-family: "Poppins Bold";
+    src: url("./POPPINS-BOLD.TTF") format("truetype");
+} 
+
+.background--dark h1, .background--dark h2, .background--dark h3, .background--dark h4, .background--dark h5, .background--dark h6 {
+            font-family: 'Poppins Regular';
+        }
+
+
+
         @media (min-width: 1025px) {
 
         .home__intro__blur {
@@ -36,7 +52,18 @@
             backdrop-filter: none;
             background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0));
             height: 100%;
-            width: 40%;
+            width: 100%;
+        }
+       
+    }
+
+    @media screen and (max-width: 786px) {
+        .home__intro__overlay {
+            -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+            width: 100%;
+            height: 471px;
         }
     }
     </style>
@@ -65,7 +92,7 @@
                         <a href="" class="logo" title="NubeStudio">
                             <img src="https://www.nubestudio.in/image/logo.png" alt="company-logo"/>
                         </a>
-                        <div class="tagline">A creative VFX <br> and animation studio</div>
+                        <!-- <div class="tagline">A creative VFX <br> and animation studio</div> -->
                     </div>
                 </div>
             </div>
@@ -90,7 +117,7 @@
                                 <h1>
                                     <span class="title">VFX for commercial advertisements, feature films, TV series & music videos.</span><br/>
                                     <span class="subtitle">
-                                        We are visual pioneers.</span>
+                                        </span>
                                 </h1>
                             </div>
                         </div>
