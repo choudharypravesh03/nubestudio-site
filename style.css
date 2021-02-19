@@ -1891,7 +1891,7 @@ b,strong {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border-radius: 50%;
-    background-image: url("../images/icons/playbtn.svg")
+    background-image: url("https://theoutpost.nl/wp-content/themes/outpost/images/icons/playbtn.svg")
 }
 
 .btn__showreel {
