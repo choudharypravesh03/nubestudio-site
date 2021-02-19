@@ -26,46 +26,13 @@
     <!-- This site is optimized with the Yoast SEO plugin v14.5 - https://yoast.com/wordpress/plugins/seo/ -->
     <title>NubeStudio</title>
 
-    <link rel='stylesheet' id='style-css'  href='https://theoutpost.nl/wp-content/themes/outpost/css/style.css?ver=1594235727' type='text/css' media='all' />
+    <!-- <link rel='stylesheet' id='style-css'  href='https://theoutpost.nl/wp-content/themes/outpost/css/style.css?ver=1594235727' type='text/css' media='all' /> -->
+    <link rel='stylesheet' id='style-css' href='./style.css' type='text/css' media='all' />
 
     <style>
-        @font-face {
-    font-family: "Poppins Regular";
-    src: url("./POPPINS-REGULAR.ttf") format("truetype");
-} 
-
-@font-face {
-    font-family: "Poppins Bold";
-    src: url("./POPPINS-BOLD.TTF") format("truetype");
-} 
-
-.background--dark h1, .background--dark h2, .background--dark h3, .background--dark h4, .background--dark h5, .background--dark h6 {
-            font-family: 'Poppins Regular';
+        .home__intro__blur, .home__intro__overlay, .drawer {
+            display: none;
         }
-
-
-
-        @media (min-width: 1025px) {
-
-        .home__intro__blur {
-            -webkit-backdrop-filter: none;
-            backdrop-filter: none;
-            background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0));
-            height: 100%;
-            width: 100%;
-        }
-       
-    }
-
-    @media screen and (max-width: 786px) {
-        .home__intro__overlay {
-            -webkit-backdrop-filter: none;
-            backdrop-filter: none;
-            background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0));
-            width: 100%;
-            height: 471px;
-        }
-    }
     </style>
 </head>
 
@@ -73,26 +40,77 @@
     <div class="preloader">
         <div class="preloader__inner">
             <div class="preloader__logo">
-                <!-- <video muted playsinline autoplay>
-                    <source
-                        src="https://player.vimeo.com/external/390979145.hd.mp4?s=54461a4edf71505c172667c66a0b75de71654ed8&profile_id=175"
-                        type="video/mp4">
-                </video> -->
+                <img src='./utils/images/loading.gif' />
             </div>
         </div>
     </div>
 
     <div id="container">
         <div class="preloadContainer hasPreload">
-
-
             <div class="topbar ">
                 <div class="content">
                     <div class="topbar__inner">
-                        <a href="" class="logo" title="NubeStudio">
+                        <a href="/" class="logo" title="NubeStudio">
                             <img src="https://www.nubestudio.in/image/logo.png" alt="company-logo"/>
                         </a>
-                        <!-- <div class="tagline">A creative VFX <br> and animation studio</div> -->
+                        <div class="tagline"></div>
+                        <button class="menubtn">
+                            <span class="menubtn__title">Menu</span>
+                            <div class="menubtn__icon">
+
+                                <span class="icon-first"></span>
+                                <span class="icon-second"></span>
+                                <span class="icon-third"></span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="drawer">
+                <div class="content">
+                    <div class="drawer__container">
+                        <div class="drawer__inner">
+
+                            <div class="drawer__menu">
+                                <nav class="menu-menu-container">
+                                    <ul id="menu-menu" class="menu">
+                                        <li id="menu-item-431"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-431">
+                                            <a href="file:///Users/praveshchoudhary/Documents/Projects/VFXSample/projects.html">Projects</a><sup>24</sup></li>
+                                        <li id="menu-item-427"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-427">
+                                            <a href="https://theoutpost.nl/about/">About</a><sup></sup></li>
+                                        <li id="menu-item-432"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-432">
+                                            <a href="https://theoutpost.nl/services/">Services</a><sup></sup></li>
+                                        <li id="menu-item-430"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-430">
+                                            <a href="https://theoutpost.nl/latest/">Latest</a><sup>205</sup></li>
+                                        <li id="menu-item-428"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-428">
+                                            <a href="https://theoutpost.nl/contact/">Contact</a><sup></sup></li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+                            <div class="drawer__bottom">
+                                <div class="drawer__contact">
+                                    <h5>General contact</h5>
+                                    <a href="tel:0031307116294">+31 30 711 62 94</a>
+                                    <br>
+                                    <a href="mailto:info@theoutpost.nl">info@theoutpost.nl</a>
+                                </div>
+                                <div class="drawer__careers">
+                                    <h5>Careers</h5>
+                                    <a href="mailto:recruitment@theoutpost.nl">recruitment@theoutpost.nl</a>
+                                    <br>
+                                    <a href="https://theoutpost.nl/jobs/" class="link">Careers</a>
+                                </div>
+                                <div class="drawer__language">
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -103,7 +121,7 @@
                         <div class="home__intro__video">
                             <video playsinline muted loop>
                                 <source
-                                    src="./videos/L'oreal Blossom.mp4"
+                                    src="https://player.vimeo.com/external/492426649.hd.mp4?s=a3aab577a2b5c26871b21ff473297369a2a6a652&profile_id=175"
                                     type="video/mp4">
                             </video>
                             <div class="btn__play home__intro__btn">Play showreel</div>
@@ -114,11 +132,8 @@
                         <div class="home__intro__blur"></div>
                         <div class="home__intro__overlay">
                             <div class="content">
-                                <h1>
-                                    <span class="title">VFX for commercial advertisements, feature films, TV series & music videos.</span><br/>
-                                    <span class="subtitle">
-                                        </span>
-                                </h1>
+                                <h1><span class="title"></span><br/><span class="subtitle"></span></h1>
+                                <button class="btn__showreel" id="playIntroVideo">Play Video</button>
                             </div>
                         </div>
                         <div class="scrollbar__container" data-start="scroll" data-halfway="almost there"
@@ -142,6 +157,124 @@
                         </div>
                         <div class="content">
                             <button class="home__fullvideo__close">Close</button>
+                        </div>
+                    </div>
+
+                    <div id="about" class="background--dark home__about">
+                        <div class="content">
+                            <div class="textcolumn">
+                                <div class="textcolumn__title">
+                                    About us </div>
+                                <div class="textcolumn__text">
+                                    <h3>
+                                        Nube Studio is a post-production company specializing in high-end Colour Grading , 
+                                        CG/VFX for commercial advertisements, feature films, TV series & music videos.
+                                    </h3>
+                                    <a href="https://theoutpost.nl/about/" class="link">
+                                        Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+
+
+                <section id="projects" class=" selected-projects">
+                    <div class="selected-projects__content">
+                        <div class="selected-projects__sticky">
+                            <div class="selected-projects__title background--light">
+                                <div class="content">
+                                    <h2>
+                                        Selected projects </h2>
+                                    <a href="https://theoutpost.nl/projects/" class="link">
+                                        See all our work</a>
+                                </div>
+                            </div>
+                            <div class="selected-projects__inner">
+                                <div class="selected-projects__slider">
+                                    <a href=""
+                                        class="selected-projects__slide rightGradient" data-title="Loreal Paris Fall Repair"
+                                        data-subtitle="Commercials">
+                                        <img width="2048" height="848" src="" class="attachment-full size-full lazyload"
+                                            alt="" srcset="" sizes=""
+                                            data-src="https://www.nubestudio.in/image/1.jpg"
+                                            data-srcset="https://www.nubestudio.in/image/1.jpg 2048w, https://www.nubestudio.in/image/1.jpg 900w, https://www.nubestudio.in/image/1.jpg 1240w, https://www.nubestudio.in/image/1.jpg 455w, https://www.nubestudio.in/image/1.jpg 768w, https://www.nubestudio.in/image/1.jpg 1536w"
+                                            data-sizes="auto" />
+                                        <div class=rightGradient>
+                                        </div>
+                                    </a>
+                                    <a href=""
+                                        class="selected-projects__slide rightGradient" data-title="OPPO Mobile N1 TVC"
+                                        data-subtitle="Digital">
+                                        <img width="2048" height="848" src="" class="attachment-full size-full lazyload"
+                                            alt="" srcset="" sizes=""
+                                            data-src="https://www.nubestudio.in/image/2.jpeg"
+                                            data-srcset="https://www.nubestudio.in/image/2.jpeg 2048w, https://www.nubestudio.in/image/2.jpeg 900w, https://www.nubestudio.in/image/2.jpeg 1240w, https://www.nubestudio.in/image/2.jpeg 455w, https://www.nubestudio.in/image/2.jpeg 768w, https://www.nubestudio.in/image/2.jpeg 1536w"
+                                            data-sizes="auto" />
+                                        <div class=rightGradient>
+                                        </div>
+                                    </a>
+                                    <a href=""
+                                        class="selected-projects__slide rightGradient"
+                                        data-title="I am Mumbai" data-subtitle="Short films">
+                                        <img width="2048" height="858" src="" class="attachment-full size-full lazyload"
+                                            alt="" srcset="" sizes=""
+                                            data-src="https://www.nubestudio.in/image/3.jpg"
+                                            data-srcset="https://www.nubestudio.in/image/3.jpg 2048w, 
+                                            https://www.nubestudio.in/image/3.jpg 900w, 
+                                            https://www.nubestudio.in/image/3.jpg 1240w, 
+                                            https://www.nubestudio.in/image/3.jpg 455w, 
+                                            https://www.nubestudio.in/image/3.jpg 768w, 
+                                            https://www.nubestudio.in/image/3.jpg 1536w"
+                                            data-sizes="auto" />
+                                        <div class=rightGradient>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="selected-projects__cursor">View case</div>
+                                <div class="selected-projects__overlay">
+                                    <div class="selected-projects__overlay__inner">
+                                        <h3>
+                                            <div class="hiddenText">
+                                                <span class="title"></span>
+                                            </div>
+                                            <div class="hiddenText">
+                                                <span class="subtitle"></span>
+                                            </div>
+
+                                        </h3>
+                                        <div class="selected-projects__overlay__bottomContainer">
+                                            <div class="scrollbar">
+                                                <span>scroll</span>
+                                                <div class="scrollbar__bar">
+                                                    <div class="scrollbar__empty"></div>
+                                                    <div class="scrollbar__fill"></div>
+                                                </div>
+                                            </div>
+                                            <div class="selected-projects__bottom">
+                                                <div class="selected-projects__toggle"></div>
+                                                <div class="selected-projects__buttons">
+                                                    <div class="arrow selected-projects__arrow--prev"></div>
+                                                    <div class="arrow selected-projects__arrow--next"></div>
+                                                </div>
+                                            </div>
+                                            <div class="projectLength">
+                                                <div class="hiddenText">
+
+                                                    <span class="currentProject"></span>
+                                                </div>
+                                                <span class="slash">/</span>
+                                                <span class="totalProject"></span>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -176,8 +309,10 @@
 /* ]]> */
     </script>
     <!-- <script type='text/javascript' src='canvas.js'></script> -->
+    <!-- <script defer="defer"
+        src="https://theoutpost.nl/wp-content/themes/outpost/js/dist/init-dist.js?ver=1594221671"></script> -->
     <script defer="defer"
-        src="https://theoutpost.nl/wp-content/themes/outpost/js/dist/init-dist.js?ver=1594221671"></script>
+        src="./utils/js/main.js"></script>
     <script type="text/javascript">(function () {
             var expirationDate = new Date();
             expirationDate.setTime(expirationDate.getTime() + 31536000 * 1000);
